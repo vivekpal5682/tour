@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="{% static 'bootstrap.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        
+        <a href="#home" class="logo">P T Service</a>
+        <ul id="navLinks">
+            <i class="ri-arrow-left-fill arrow" onclick="hidemenu()"> back</i>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+         <i class="ri-menu-line" onclick="showmenu()"></i>
+    </nav>
+    <section id="home" class="home-sec">
+
+        <div class="left">
+            <div class="text">
+                <h1><span style="color: red;"> Looking </span> To <br> Rent A Car</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam similique ratione explicabo corrupti
+                    totam atque?</p>
+                <a href="tel:9971467542">Call Now</a>
+            </div>
+        </div>
+        <div class="right">
+            <img src="images/innova.png" alt="">
+        </div>
+    </section>
+
+    <!-- about section start here -->
+    <section id="about">
+        <!-- <div class="main-form">
+            
+        </div> -->
+        <div class="heading">
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At pariatur provident a doloremque deleniti eos
+                veritatis exercitationem, ipsam doloribus ea est atque commodi repellendus architecto quaerat nesciunt.
+                Commodi, similique.</p>
+        </div>
+        <div class="container-fluid">
+            <section class="about" id="aboutSec">
+                <div class="about_img">
+                    <img src="images/car-hire-hero.jpg" alt="">
+                </div>
+                <div class="about_content">
+                    <h2>Where We have been started</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio dolorum, vel unde recusandae,
+                        distinctio officiis explicabo ullam provident quia, iure at maiores.
+                        explicabo ullam provident quia, iure at maiores. Illum voluptates fuga suscipit
+                        voluptatum quam nostrum similique quibusdam a, tIllum voluptates fuga suscipit
+                        voluptatum quam nostrum similique quibusdam a, tempora non odit! Quo, modi sed reiciendis fugit
+                        perspiciatis perferendis explicabo, sapiente odit aperiam ex, necessitatibus repellat magnam!
+                    </p>
+                    <a href="#about" onclick="show()">Book Now</a>
+                </div>
+                <div id="mainForm">
+                    <form action="">
+                        <h1>Enquery Form</h1>
+                        <div class="entery">
+
+                            <input type="text" required placeholder="Enter Your Name" id="name">
+                        </div>
+                        <div class="entery">
+
+                            <input type="text" required placeholder="Enter Pick Up Location" id="pick">
+                        </div>
+                        <div class="entery">
+
+                            <input type="text" required placeholder="Enter Drop location" id="drop">
+                        </div>
+                        <div class="entery">
+                            <input type="number" placeholder="Phone Number" required>
+                        </div>
+                        <div class="entery">
+                            <input type="submit" class="entery-btn">
+                        </div>
+                        <div class="entery">
+                            <input type="button" onclick="cancel()" value="Cancel"
+                                style="background-color: red; color:white; font-weight:700; border:none;">
+                        </div>
+
+                    </form>
+                </div>
+            </section>
+        </div>
+    </section>
+    <!-- about section ends here -->
+    <!-- service section start here -->
+    <section id="service" class="service-sec">
+        <div class="head">
+            <h1>Our Services</h1>
+        </div>
+        <div class="main-row">
+            <div class="row-1">
+                <div class="box-1">
+                    <div class="image">
+                        <img src="images/innova-2.png" alt="somthing went wrong">
+                    </div>
+                    <h1><span style="color: black;">Car</span> For Rent</h1>
+                    <a href="#" class="sys" onclick="show()">Book Now</a>
+                </div>
+                <div class="box-1">
+                    <div class="image">
+                        <img src="images/innova-2.png" alt="somthing went wrong">
+                    </div>
+                    <h1><span style="color: black;">Car</span> For Rent</h1>
+                    <a href="#" class="sys" onclick="show()">Book Now</a>
+                </div>
+                <div class="box-1">
+                    <div class="image">
+                        <img src="images/innova-2.png" alt="somthing went wrong">
+                    </div>
+                    <h1><span style="color: black;">Car</span> For Rent</h1>
+                    <a href="#" class="sys" onclick="show()">Book Now</a>
+                </div>
+            </div>
+            <div class="row-1">
+                <div class="box-1">
+                    <div class="image">
+                        <img src="images/innova-2.png" alt="somthing went wrong">
+                    </div>
+                    <h1><span style="color: black;">Car</span> For Rent</h1>
+                    <a href="#" class="sys" onclick="show()">Book Now</a>
+                </div>
+                <div class="box-1">
+                    <div class="image">
+                        <img src="images/innova-2.png" alt="somthing went wrong">
+                    </div>
+                    <h1><span style="color: black;">Car</span> For Rent</h1>
+                    <a href="#" class="sys" onclick="show()">Book Now</a>
+                </div>
+                <div class="box-1">
+                    <div class="image">
+                        <img src="images/innova-2.png" alt="somthing went wrong">
+                    </div>
+                    <h1><span style="color: black;">Car</span> For Rent</h1>
+                    <a href="#" class="sys" onclick="show()">Book Now</a>
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+    <!-- service section end here -->
+
+    <!-- why us section start here -->
+    <section id="whyus" class="whyus">
+        <div class="head">
+            <h1>Why Prakash Taxi Service</h1>
+            <div class="main-feature">
+                <div class="feature-row">
+                    <div class="feature-col">
+                        <div class="col-image">
+                            <img src="images/car-1.webp" alt="image not load">
+                            <div class="text-1">
+                                <h2>No Return Fare</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, obcaecati.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-col">
+                        <img src="images/car-2.webp" alt="image not load">
+                        <div class="text-1">
+                            <h2>No Return Fare</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, obcaecati.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="feature-col">
+                        <img src="images/car-3.webp" alt="image not load">
+                        <div class="text-1">
+                            <h2>No Return Fare</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, obcaecati.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-col">
+                        <img src="images/car-4.webp" alt="image not load">
+                        <div class="text-1">
+                            <h2>No Return Fare</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, obcaecati.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- why us section end here -->
+    <!-- most visited place section start here -->
+    <section class="place" id="place">
+        <div class="pla">
+            <h1>Most Visited Place</h1>
+        </div>
+        <div class="main-place">
+            <div class="place-row">
+                <div class="place-col">
+                    <div class="img">
+                        <img src="images/mathura.webp" alt="">
+                    </div>
+                    <h3><span style="color: orangered;">Ghaziabad</span> To Mathura</h3>
+                </div>
+                <div class="place-col">
+                    <div class="img">
+                        <img src="images/prayagraj.webp" alt="">
+                    </div>
+                    <h3><span style="color: orangered;">Ghaziabad</span> To Prayagraj</h3>
+                </div>
+                <div class="place-col">
+                    <div class="img">
+                        <img src="images/jaipur.webp" alt="">
+                    </div>
+                    <h3><span style="color: orangered;">Ghaziabad</span> To Jaipur</h3>
+                </div>
+                <div class="place-col">
+                    <div class="img">
+                        <img src="images/kasol.webp" alt="">
+                    </div>
+                    <h3><span style="color: orangered;">Ghaziabad</span> To Kasol</h3>
+                </div>
+            </div>
+            <div class="place-row">
+                <div class="place-col">
+                    <div class="img">
+                        <img src="images/manali.webp" alt="">
+                    </div>
+                    <h3><span style="color: orangered;">Ghaziabad</span> To Manali</h3>
+                </div>
+                <div class="place-col">
+                    <div class="img">
+                        <img src="images/mcleodganj.webp" alt="">
+                    </div>
+                    <h3><span style="color: orangered;">Ghaziabad</span> To Mcleodganj</h3>
+                </div>
+                <div class="place-col">
+                    <div class="img">
+                        <img src="images/mussoorie.webp" alt="">
+                    </div>
+                    <h3><span style="color: orangered;">Ghaziabad</span> To Mussoorie</h3>
+                </div>
+                <div class="place-col">
+                    <div class="img">
+                        <img src="images/nainital.webp" alt="">
+                    </div>
+                    <h3><span style="color: orangered;">Ghaziabad</span> To Nainital</h3>
+                </div>
+            </div>
+            <div class="place-row">
+                <div class="place-col">
+                    <div class="img">
+                        <img src="images/rishikesh.webp" alt="">
+                    </div>
+                    <h3><span style="color: orangered;">Ghaziabad</span> To Rishikesh</h3>
+                </div>
+                <div class="place-col">
+                    <div class="img">
+                        <img src="images/shimla.webp" alt="">
+                    </div>
+                    <h3><span style="color: orangered;">Ghaziabad</span> To Shimla</h3>
+                </div>
+                <div class="place-col">
+                    <div class="img">
+                        <img src="images/udaipur.webp" alt="">
+                    </div>
+                    <h3><span style="color: orangered;">Ghaziabad</span> To Udaipur</h3>
+                </div>
+                <div class="place-col">
+                    <div class="img">
+                        <img src="images/agra.webp" alt="">
+                    </div>
+                    <h3><span style="color: orangered;">Ghaziabad</span> To Agra</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- most visited place section ends here -->
+    <!-- contact us section start here -->
+    <section id="contact" class="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae repudiandae id doloribus quibusdam
+                quaerat cum, pariatur error quasi accusantium architecto.</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon">
+                        <i class="ri-map-pin-fill"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>C 2<sup>nd</sup> Brijnagri <br> Nandgram Ghaziabad <br> 202001</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="ri-phone-fill"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>9971467542</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="ri-mail-fill"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>omprkashpal2255@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactMap">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.2554134710103!2d77.39909594271329!3d28.68800046378823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf18ef153214f%3A0x32bc0379995bedb7!2sBrij%20Nagri%20Society!5e0!3m2!1sen!2sin!4v1705293408237!5m2!1sen!2sin"
+                    width="450" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="mapy"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- contact us section end here -->
+
+    <script src="index.js"></script>
+</body>
+
+</html>
